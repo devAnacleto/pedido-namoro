@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Nossa História ❤️</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <div class="coracoes">
+    <span>💖</span><span>💗</span><span>💘</span>
+    <span>💕</span><span>💞</span><span>💖</span>
+    <span>💗</span><span>💘</span><span>💕</span>
+  </div>
+
+  <section id="introducao">
+    <h1>Antes de qualquer coisa…</h1>
+
+    <p>
+      Isso aqui é apenas uma brincadeira, então peço por favor que não fique brava meu amor 🙏
+    </p>
+
+    <p>
+      E é pra fazer até o final em 😡
+    </p>
+
+    <button class="btn" onclick="irParaEtapa('conhecemos')">
+      Começar
+    </button>
+  </section>
+
+  <section id="conhecemos" class="etapa">
+    <h2>Explicação</h2>
+
+    <p>
+      Vão ser apenas 3 perguntas meu bem, eu queria fazer mais, porém ia demorar muito e eu queria te mostrar hoje (quero receber elogios do meu benzinho). As perguntas são todas de escolhas e tem a ver com nós.
+    </p>
+
+    <p>
+      Claro que terão algumas pegadinhas(que deram muita dor de cabeça), mas eu sei que você vai gostar. <br>
+      A baixo segue uma foto do casal mais lindo do mundo(Meramente ilustativa).
+    </p>
+
+    <p>
+      (E antes de você ficar brava e eu virar estampa de camisa, gostaria de dizer que <br><strong>EU TE AMO MUITO</strong>)
+    </p>
+
+    <img src="img/foto-praca.jpeg" alt="Nossa foto juntos">
+
+    <button class="btn" onclick="irParaEtapa('pergunta1')">
+      Próxima etapa
+    </button>
+  </section>
+
+  <section id="pergunta1" class="etapa">
+    <h2>Pergunta 1</h2>
+
+    <p>
+      No dia em que nos conhecemos, qual foi a primeira impressão
+      que você teve de mim?
+    </p>
+
+    <div class="opcoes">
+      <button onclick="respostaErrada(this)">
+        A) Que eu namorava com a Ana Luiza
+      </button>
+
+      <button onclick="respostaErrada(this)">
+        B) Que eu era um estranho esquisito invadindo a mesa
+      </button>
+
+      <button onclick="respostaErrada(this)">
+        C) Que eu era um amigo da Isabella
+      </button>
+
+      <button onclick="respostaCorretaPergunta1()">
+        D) Que eu era o cara mais bonito do planeta Terra  
+        e você estava apaixonada
+      </button>
+
+      <button onclick="respostaErrada(this)">
+        E) Nenhuma das alternativas acima (se explique)
+      </button>
+    </div>
+  </section>
+
+  <section id="momentos" class="etapa">
+    <h2>Eu não sei dar titulos.</h2>
+
+    <p>
+      Como eu sei que nesse exato momento você está com um sorriso de orelha a orelha, eu gostaria de agradecer a você por algumas coisas.
+    </p>
+
+    <p>
+      Obrigado por ser essa pessoa tão especial que você tem sido em minha vida, por cada momento, brincadeira, sorriso, abraço, por ser essa mulher <strong>bonita, gente boa, engraçada e com o sorriso bonito</strong> que me encanta a cada dia mais, enfim obrigado por tudo meu bem. Espero que esse seja só o começo dessa nossa relação maravilhosa.
+    </p>
+
+    <div class="video-momentos">
+      <video id="videoMomentos" autoplay loop muted playsinline>
+        <source src="video/video-pronto.mp4" type="video/mp4">
+      </video>
+    </div>
+
+    <button class="btn" onclick="irParaEtapa('pergunta2')">
+      Continuar
+    </button>
+  </section>
+
+  <section id="pergunta2" class="etapa">
+    <h2>Pergunta 2</h2>
+
+    <p>
+      Para essa pergunta, <span id="voceEspecial">VOCÊ</span> deve acertar(Se errar vai ficar feio em 👺):
+    </p>
+
+    <p>
+      Qual é o meu maior vício ultimamente?
+    </p>
+
+    <div class="opcoes">
+      <button onclick="respostaErradaPergunta2(this)">
+        A) O anime que eu julgava ruim, mas é uma obra-prima
+      </button>
+
+      <button onclick="respostaErradaPergunta2(this)">
+        B) Cerveja
+      </button>
+
+      <button onclick="respostaErradaPergunta2(this)">
+        C) Dizer "AaaaAAAaaAAAa"
+      </button>
+
+      <button onclick="respostaErradaPergunta2(this)">
+        D) Dizer "Deus é bom e o djabo não presta"
+      </button>
+
+      <button onclick="respostaErradaPergunta2(this)">
+        E) Treinar
+      </button>
+    </div>
+  </section>
+
+  <section id="declaracao" class="etapa">
+    <h2>E pra fechar com chave de ouro</h2>
+
+    <p>
+      Vamos ao motivo pelo qual eu disse que a senhorita iria ficar brava comigo e a verdadeira intenção por trás disso.
+    </p>
+
+    <p>
+      Por favor não me mate (Eu ja disse que te amo muito).
+    </p>
+    <button id="btnUltimaPergunta">
+      IR PARA O FINAL
+    </button>
+  </section>
+
+  <section id="patrocinadores" class="overlay">
+    <video id="videoPatrocinio">
+      <source src="video/anuncio.mp4" type="video/mp4">
+    </video>
+
+    <button id="fecharPatrocinio">Fechar</button>
+  </section>
+
+  <section id="pedidoFinal" class="etapa destaque">
+    <h2>Última pergunta 💍</h2>
+
+    <p>Você aceita namorar comigo?</p>
+
+    <p class="obs">
+      (Eu deveria sacar a aliança agora,  
+      mas se eu fosse esperar elas chegarem,  
+      o pedido ia ficar pro mês que vem  
+      e eu já estava ansioso demais)
+    </p>
+
+    <div class="opcoes">
+      <button id="btnSim">Sim ❤️</button>
+      <button id="btnNao">Não</button>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
