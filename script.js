@@ -1,3 +1,5 @@
+alert("Eu já estou com saudades!")
+
 const somErro = new Audio('audio/erro.mp3');
 const somAcerto = new Audio('audio/acerto.mp3');
 
